@@ -35,27 +35,31 @@ const QuoteGenerator = () => {
 	const { Hiquote, Enquote } = data[params.id][currentIndex];
 
 	return (
-		<div className="h-screen flex flex-col justify-center items-center">
-			<div className="w-[90%] max-w-screen-md flex flex-col p-8 gap-5 border-2 border-black rounded-lg dark:text-white dark:border-white">
-				<div className="inline-block text-center">
-					<ImQuotesLeft className="inline relative -top-2 text-[#dd0201] mx-1" />
-					<span>{Hiquote}</span>
-					<ImQuotesRight className="inline relative -top-2 text-[#dd0201] mx-1" />
+		<div className="h-screen flex flex-col items-center py-10">
+			<div className="w-[90%] md:max-w-screen-lg border-2 border-black rounded-lg dark:text-white dark:border-white">
+				<div className="w-full h-[200px] flex flex-col p-8 gap-5 text-sm md:text-lg">
+					<div className="inline-block text-center">
+						<ImQuotesLeft className="inline relative -top-2 text-[#dd0201] mx-1" />
+						<span>{Hiquote}</span>
+						<ImQuotesRight className="inline relative -top-2 text-[#dd0201] mx-1" />
+					</div>
+					<div className="inline-block text-center">
+						<ImQuotesLeft className="inline relative -top-2 text-[#dd0201] mx-1" />
+						<span>{Enquote}</span>
+						<ImQuotesRight className="inline relative -top-2 text-[#dd0201] mx-1" />
+					</div>
 				</div>
-				<div className="inline-block text-center">
-					<ImQuotesLeft className="inline relative -top-2 text-[#dd0201] mx-1" />
-					<span>{Enquote}</span>
-					<ImQuotesRight className="inline relative -top-2 text-[#dd0201] mx-1" />
-				</div>
-				<div className="flex justify-between items-center mt-10">
+				<div className="flex justify-center items-center mt-10 mb-2 gap-20">
 					<button
 						onClick={() => navigate("/")}
-						className="px-4 py-2 text-sm md:text-base rounded-md hover:bg-[#e75917] bg-[#ff5001] text-white">
+						className="px-4 py-2 text-sm md:text-base rounded-md border2
+						text-black dark:bg-transparent border-2 border-black font-semibold dark:border-white dark:text-white hover:border-red-600 dark:hover:border-red-600"> 
 						Back to Home
 					</button>
 					<button
 						onClick={nextQuote}
-						className="px-4 py-2 text-sm md:text-base rounded-md hover:bg-[#d5323d] bg-[#f7414c] text-white">
+						className="px-4 py-2 text-sm md:text-base rounded-md border2
+						text-black dark:bg-transparent border-2 border-black font-semibold dark:border-white dark:text-white hover:border-red-600 dark:hover:border-red-600">
 						Next Quote
 					</button>
 				</div>
