@@ -36,7 +36,7 @@ const QuoteGenerator = () => {
 	const { Hiquote, Enquote } = data[params.id][currentIndex];
 
 	return (
-		<div className="relative w-[60%] h-[700px] flex mx-auto">
+		<div className="relative w-[60%] h-[630px] flex mx-auto">
 			<img className="w-full" src={border1} alt="" />
 			<div className="absolute flex flex-col p-4 gap-5 w-[80%] top-[15em] left-[calc(50%-370px)]">
 				<div className="inline-block text-center">
