@@ -37,7 +37,7 @@ const QuoteGenerator = () => {
 	return (
 		<div className="h-screen flex flex-col items-center py-10">
 			<div className="w-[90%] md:max-w-screen-lg border-2 border-black rounded-lg dark:text-white dark:border-white">
-				<div className="w-full h-[200px] flex flex-col p-8 gap-5 text-sm md:text-lg">
+				<div className="w-full min-h-52 flex flex-col p-8 gap-5 text-sm md:text-lg">
 					<div className="inline-block text-center">
 						<ImQuotesLeft className="inline relative -top-2 text-[#dd0201] mx-1" />
 						<span>{Hiquote}</span>
